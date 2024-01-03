@@ -27,7 +27,7 @@ app.use(bodyParser.urlencoded({limit: '200mb', extended: true}));
     //res.append('Access-Control-Allow-Headers', 'Content-Type');
     //next();
 });*/
-const PORT = process.env.PORT || 443;
+const PORT = process.env.PORT || 80;
 app.listen(PORT, function(){
     console.log("Server started on port 3000! Working Directory:"+path.join(__dirname, ".")+"\n");
     /*|>Start::*/  configureStandby();
